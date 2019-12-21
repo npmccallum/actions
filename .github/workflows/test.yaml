@@ -1,0 +1,9 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  build:
+    name: Test Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Job Step One
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
